@@ -170,8 +170,22 @@ img {
 }
 
 .current {
+  position: relative;
   color: var(--accent-cl);
 }  
+
+.current::before {
+
+content: '';
+position: absolute;
+height: 4px;
+width: 100%;
+border-radius: 2px;
+left: 0;
+bottom: 0;
+background-color: var(--accent-cl);
+
+}
 
 .contact-icon {
   margin-right: 10px;
@@ -377,8 +391,33 @@ fill: currentColor;
   background-color: var(--white-cl);
 }
 
+/* secton activity */
 
+.list-work {
+  display: flex;
+}
 
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work-item {
+  position:relative;
+}
+
+.work-text {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 27px 0px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-cl);
+  background-color: rgba(47, 48, 58, 0.8);
+}
 /* features section home page */
 
 .features {
@@ -421,14 +460,6 @@ padding-bottom: 94px;}
 
 .activity {
   padding-bottom: 94px;
-}
-
-.list-work {
-  display: flex;
-}
-
-.work-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 /* our team section home page */
@@ -672,4 +703,38 @@ color: var(--accent-color);
   font-size: 16px;
   line-height: 1.87;  
   font-weight: 400;
+}
+
+
+
+.portfolio-description {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-description:hover .overlay-text {
+  transform: translatex(0);
+}
+
+
+.overlay-text{
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+ font-weight: normal;
+ padding: 24px;
+ font-size: 18px;
+ line-height: calc(28 / 18);
+ letter-spacing: 0.03em;
+ color: var(--alt-background);
+ background-color: rgba(33, 150, 243, 0.9);
+ transform: translatex(-100%);
+  transition: transform 250ms ease;
+  
 }
