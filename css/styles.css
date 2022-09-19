@@ -83,6 +83,11 @@ img {
   overflow: hidden;
 }
 
+.footer-social-link:hover,
+.footer-social-link:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
 
 .link {
   text-decoration: none;
@@ -521,6 +526,7 @@ padding-bottom: 94px;}
 
 }
 
+
 .social-item {
   
   margin-right: 10px;
@@ -537,11 +543,11 @@ padding-bottom: 94px;}
   color: var(--logo-color); 
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   color: var(--white-cl);
   background-color: var(--accent-cl);
 }
-
 
 .social-logo {
   fill: currentColor;
@@ -596,20 +602,21 @@ border-radius: 4px;
 color: var(--accent-color);
 }
 
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+
 .client-icon {
   fill: var(--logo-color);
 }
 
-.client-link:hover,
-.client-link:focus {
-  border: 1px solid var(--accent-cl);
-}
-
-
-
-.client-icon:hover,  
-.client-icon:focus {
-  fill: var(--accent-cl);
+.client-item:hover,
+.client-item:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* portfolio page body*/
