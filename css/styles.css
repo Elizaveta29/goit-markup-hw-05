@@ -722,10 +722,13 @@ transition-timing-function: var(--timing-function);
 
 .prodject-link {
   display: block;
+  color:var(--main-text-cl);
+
 }
 
 a {
   text-decoration: none;
+  
 }
 .prodject-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -752,6 +755,7 @@ a {
   font-size: 16px;
   line-height: 1.87;  
   font-weight: 400;
+ color: var(--main-text-cl);
 }
 
 
